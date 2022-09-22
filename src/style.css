@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  height: 100px;
+  padding: 20px 36px;
+  background-color: white;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.navLogo {
+  height: 100%;
+  max-width: 100px;
+  bottom: 20px;
+}
