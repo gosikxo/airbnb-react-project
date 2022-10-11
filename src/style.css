@@ -15,6 +15,14 @@ nav {
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
+.grey {
+  color: #918E9B
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .navLogo {
   height: 100%;
   max-width: 100px;
@@ -48,4 +56,24 @@ nav {
   font-weight: 300;
   font-size: 16px;
   line-height: 110%;
+}
+
+.cardComponent {
+  width: 175px;
+  font-size: 12px;
+}
+
+.cardImg {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.cardRating {
+  display: flex;
+  align-items: center;
+}
+
+.cardStar {
+  width: 18px;
+  height: 14px;
 }
