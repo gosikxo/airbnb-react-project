@@ -34,8 +34,18 @@ nav {
 
 .heroTitle {
   margin-bottom: 16px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
 }
 
 .heroText {
   margin-top: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
 }
