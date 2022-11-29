@@ -58,14 +58,30 @@ nav {
   line-height: 110%;
 }
 
+section {
+  padding: 20px;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .cardComponent {
   width: 175px;
   font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardImg {
+  height: 235px;
   width: 100%;
   border-radius: 9px;
+  margin-bottom: 9px;
 }
 
 .cardRating {
@@ -76,4 +92,13 @@ nav {
 .cardStar {
   width: 18px;
   height: 14px;
+}
+
+.cardTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardPrice {
+  margin-top: auto;
 }

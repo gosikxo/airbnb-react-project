@@ -13,7 +13,7 @@ const Card = (props) => {
       <p className='cardTitle'>
         {props.title}
       </p>
-      <p className='cardCostPerPerson'>
+      <p className='cardPrice'>
         <span className='bold'> From ${props.price} </span> / person
       </p>
     </div>
