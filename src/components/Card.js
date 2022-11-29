@@ -5,7 +5,7 @@ const Card = (props) => {
     <div className='cardComponent'>
       <img className='cardImg' src={props.img} alt="zaferes" />
       <div className='cardRating'>
-        <img className='cardStar' src='../star.png' alt="star" />
+        <img className='cardStar' src='images/star.png' alt="star" />
         <span>{props.rating}</span>
         <span className='grey'>({props.reviewCount}) • </span>
         <span className='grey'>{props.country}</span>

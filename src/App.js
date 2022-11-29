@@ -10,7 +10,7 @@ export default function App () {
       <Navbar />
       <Hero />
       <Card
-        img="image 12.png"
+        img="images/image 12.png"
         rating="5.0"
         reviewCount={6}
         country="USA"
