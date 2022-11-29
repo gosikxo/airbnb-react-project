@@ -2,26 +2,26 @@ import React from 'react'
 
 const Card = (props) => {
   let badgeText 
-  if(props.openSpots === 0) {
+  if(props.el.openSpots === 0) {
     badgeText = "SOLD OUT"
-  } else if(props.location === 'Online') {
+  } else if(props.el.location === 'Online') {
     badgeText = "ONLINE"
   }
   return (
     <div className='cardComponent'>
       {badgeText && <div className='cardBadge'>{badgeText}</div>}
-      <img className='cardImg' src={props.img} alt="images" />
+      <img className='cardImg' src={props.el.coverImg} alt="images" />
       <div className='cardRating'>
         <img className='cardStar' src='images/star.png' alt="star" />
-        <span>{props.rating}</span>
-        <span className='grey'>({props.reviewCount}) • </span>
-        <span className='grey'>{props.location}</span>
+        <span>{props.el.stats.rating}</span>
+        <span className='grey'>({props.el.stats.reviewCount}) • </span>
+        <span className='grey'>{props.el.location}</span>
       </div>
       <p className='cardTitle'>
-        {props.title}
+        {props.el.title}
       </p>
       <p className='cardPrice'>
-        <span className='bold'> From ${props.price} </span> / person
+        <span className='bold'> From ${props.el.price} </span> / person
       </p>
     </div>
   )
