@@ -1,8 +1,15 @@
 import React from 'react'
 
 const Card = (props) => {
+  let badgeText 
+  if(props.openSpots === 0) {
+    badgeText = "SOLD OUT"
+  } else if(props.location === 'Online') {
+    badgeText = "ONLINE"
+  }
   return (
     <div className='cardComponent'>
+      {badgeText && <div className='cardBadge'>{badgeText}</div>}
       <img className='cardImg' src={props.img} alt="images" />
       <div className='cardRating'>
         <img className='cardStar' src='images/star.png' alt="star" />
